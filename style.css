@@ -1,0 +1,379 @@
+        :root {
+            --gym-red: #ff0000;
+            --gym-black: #000000;
+            --gym-dark: #111111;
+            --gym-gray: #222222;
+            --gym-light: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--gym-dark);
+            color: white;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        /* Navbar */
+        .navbar-gym {
+            background: rgba(0, 0, 0, 0.95);
+            padding: 20px 0;
+            border-bottom: 3px solid var(--gym-red);
+        }
+        
+        .navbar-brand-gym {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--gym-red) !important;
+        }
+        
+        .nav-link-gym {
+            color: white !important;
+            font-weight: 600;
+            margin: 0 10px;
+            padding: 8px 0;
+            position: relative;
+        }
+        
+        .nav-link-gym:hover {
+            color: var(--gym-red) !important;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
+                        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero-btn {
+            background: var(--gym-red);
+            color: white;
+            padding: 12px 35px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        
+        .hero-btn:hover {
+            background: white;
+            color: var(--gym-red);
+            transform: scale(1.05);
+        }
+        
+        /* Section Common */
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: white;
+            display: inline-block;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--gym-red);
+        }
+        
+        /* About Section */
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.2);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.03);
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+        
+        .feature-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-list i {
+            color: var(--gym-red);
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        
+        /* Equipment Section */
+        .equipment-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .equipment-card:hover {
+            border-color: var(--gym-red);
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.1);
+        }
+        
+        .equipment-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .equipment-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Classes Section */
+        .class-card {
+            background: rgba(34, 34, 34, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            text-align: center;
+            height: 100%;
+        }
+        
+        .class-card:hover {
+            background: rgba(50, 50, 50, 0.9);
+            transform: translateY(-5px);
+        }
+        
+        .class-icon {
+            font-size: 40px;
+            color: var(--gym-red);
+            margin-bottom: 20px;
+        }
+        
+        /* Trainers Section */
+        .trainer-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .trainer-img {
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .trainer-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .trainer-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+                .pricing-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-card:hover {
+            border: 2px solid var(--gym-red);
+        }
+        
+        .price-tag {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--gym-red);
+            margin: 20px 0;
+        }
+        
+        .price-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+        
+        .price-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Contact Section */
+        .contact-info-box {
+            background: rgba(255, 0, 0, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            height: 100%;
+            border-left: 5px solid var(--gym-red);
+        }
+        
+        .contact-icon {
+            font-size: 24px;
+            color: var(--gym-red);
+            margin-bottom: 15px;
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .form-control-gym {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        
+        .form-control-gym:focus {
+            outline: none;
+            border-color: var(--gym-red);
+        }
+       .footer-gym {
+            background: linear-gradient(to right, #000000, #222222);
+            padding: 60px 0 20px;
+            border-top: 5px solid var(--gym-red);
+        }
+        
+        .footer-logo {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--gym-red);
+            margin-bottom: 20px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background: var(--gym-red);
+            color: white;
+        }
+        
+        .footer-links h5 {
+            color: white;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--gym-red);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--gym-red);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-padding {
+                padding: 50px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+        }
