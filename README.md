@@ -87,7 +87,7 @@ Bootstrap Grid System and CSS Media Queries are used to ensure responsiveness.
 ## 🎓 Assignment Details
 
 - **Institute:** Saylani Mass IT Training (SMIT)
-- **Course:** Web Development
+- **Course:** Web & App Development
 - **Topic:** HTML & CSS UI Practice
 - **Assignment Type:** Static Frontend Website
 - **Project Level:** Beginner to Intermediate
@@ -97,7 +97,7 @@ Bootstrap Grid System and CSS Media Queries are used to ensure responsiveness.
 ## 👨‍💻 Author
 
 **Hafiz Muhammad Usman Raza**  
-Frontend Web Development Student  
+Modern Web & App Development Student  
 Saylani Mass IT Training (SMIT)
 
 ---
